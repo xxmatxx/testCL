@@ -19,5 +19,7 @@ blocks:
             - echo "Hello from my 'main' container"
         - name: 'Job #2'
           commands:
-            - ls -al
+            - echo SEMAPHORE_GIT_URL
+            - echo SEMAPHORE_GIT_DIR
+            - SEMAPHORE_GIT_BRANCH
     dependencies: []
