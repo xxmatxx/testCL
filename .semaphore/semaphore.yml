@@ -16,8 +16,6 @@ blocks:
         - name: Test job
           commands:
             - checkout
-            - echo $SEMAPHORE_GIT_URL
-            - echo $SEMAPHORE_GIT_DIR
-            - echo $SEMAPHORE_GIT_BRANCH
+            - pwd
             - ls -al
     dependencies: []
