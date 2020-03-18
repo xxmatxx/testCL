@@ -22,5 +22,5 @@ blocks:
             - 'curl ${GODOT_URL} --output ${GODOT_ZIP}'
             - 'unzip ${GODOT_ZIP}'
             - 'chmod +x ${GODOT_BIN}'
-            - '${GODOT_BIN} --version'
+            - './${GODOT_BIN} --version'
     dependencies: []
