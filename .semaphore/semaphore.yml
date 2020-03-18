@@ -17,6 +17,6 @@ blocks:
           commands:
             - echo $SEMAPHORE_GIT_URL
             - echo $SEMAPHORE_GIT_DIR
-            - pwd
             - echo $SEMAPHORE_GIT_BRANCH
+            - ls -al
     dependencies: []
