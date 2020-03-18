@@ -1,0 +1,28 @@
+version: v1.0
+name: Run in Docker
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+  containers:
+    - name: main
+      image: 'semaphoreci/node:10'
+    - name: database
+      image: 'postgres:11'
+blocks:
+  - name: Hello World
+    task:
+      jobs:
+        - name: Test job
+          commands:
+            - checkout
+            - echo "Hello from my 'main' container"
+    dependencies: []
+  - name: 'Block #2'
+    dependencies:
+      - Hello World
+    task:
+      jobs:
+        - name: 'Job #1'
+          commands:
+            - echo "Hi"
