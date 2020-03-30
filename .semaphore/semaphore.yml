@@ -25,5 +25,5 @@ blocks:
             - checkout
             - cd ..
             - ls -al
-            - '.\${GODOT_BIN} -s --path .\testCL addons/gut/gut_cmdln.gd -gdir=res://test'
+            - './${GODOT_BIN} -s --path .\testCL addons/gut/gut_cmdln.gd -gdir=res://test'
     dependencies: []
