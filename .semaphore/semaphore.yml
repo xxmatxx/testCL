@@ -15,8 +15,8 @@ blocks:
       jobs:
         - name: Test job
           commands:
-            - GODOT_VERSION=3.0.6
-            - 'GODOT_BIN=Godot_v${GODOT_VERSION}-stable_linux_headless.64'
+            - GODOT_VERSION=3.2.1
+            - 'GODOT_BIN=Godot_v${GODOT_VERSION}-stable_linux_server.64'
             - 'GODOT_ZIP=${GODOT_BIN}.zip'
             - 'GODOT_URL=https://downloads.tuxfamily.org/godotengine/${GODOT_VERSION}/${GODOT_ZIP}'
             - 'curl ${GODOT_URL} --output ${GODOT_ZIP}'
