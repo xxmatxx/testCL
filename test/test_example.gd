@@ -18,5 +18,5 @@ func test_assert_true_with_true():
 	assert_true(true, "Should pass, true is true")
 	
 	
-func test_assert_true_with_true():
+func test_assert_true_with_false():
 	assert_true(false, "Should fail")
