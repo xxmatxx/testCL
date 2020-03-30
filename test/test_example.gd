@@ -16,3 +16,7 @@ func test_assert_eq_number_equal():
 
 func test_assert_true_with_true():
 	assert_true(true, "Should pass, true is true")
+	
+	
+func test_assert_true_with_true():
+	assert_true(false, "Should fail")
